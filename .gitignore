@@ -5,6 +5,7 @@
 
 # Firebase Hosting
 /firebase.json
+/firebaseinfo.js
 *.cache
 hosting/.cache
 
