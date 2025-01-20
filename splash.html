@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/splash.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <di id="main">
+        <div class="w3-margin banner">
+            <div class="w3-center">
+                <img id="logo" src="banners/mQuest.png">
+                <h1 id="questText"><span id="studentName">Student</span>, You have <span id="questNum">...</span> active quests</h1>
+            </div>
+        </div>
+        
+        <div class="w3-half red w3-display-container btn-div">
+            <button id="quest-btn" 
+            class="w3-round-xxlarge big-btn w3-button cursive w3-display-position w3-padding w3-blue w3-hover-teal">Embark on Quest</button>
+        </div>
+    
+        <div 
+        class="w3-half red w3-display-container btn-div">
+            <button id="leaderboard-btn" 
+            onclick="window.location.href='leaderboard.html'"
+            class="w3-round-xxlarge big-btn w3-button cursive w3-display-position w3-padding w3-blue w3-hover-teal">Leaderboard</button>
+        </div>
+    </div>  
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="firebaseinfo.js"></script>
+    <script src="scripts/splash.js"></script>
+</body>
+</html>

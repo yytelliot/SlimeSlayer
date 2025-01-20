@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-card-4 w3-display-middle w3-center">
+        <div class="w3-container w3-teal">
+            <h2>Login</h2>
+        </div>
+        <div class="w3-container w3-white">
+            <img id="login-image" src="profileimage.png" alt="" class="w3-center w3-margin-top">
+            <form name="login" class="w3-container"></form>
+                <div class="w3-margin">
+                    <label class="w3-left">User ID</label><br>
+                    <input class="loginput" type="text" id="login-name" maxlength="9"><br>
+                </div>
+                <div class="w3-margin-top w3-margin-left w3-margin-right">
+                    <label class="w3-left">Password</label><br>
+                    <input class="loginput" type="password" id="login-password" maxlength="30"><br>
+                </div>
+
+                <button id="login-btn" class="w3-btn w3-blue-grey w3-margin">Login</button>
+            </form>
+            <div id="wrong-password" class="w3-text-red"><br></div>
+            <br>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="firebaseinfo.js"></script>
+    <script src="scripts/login.js"></script>
+
+</body>
+</html>

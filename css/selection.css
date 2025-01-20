@@ -1,0 +1,37 @@
+body {
+    background-image: url(../bg/splashbg.jpg);
+    background-size: cover;
+    min-height: 100%;
+}
+
+#qContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cursive {
+    font-family: 'Almendra', serif;
+    text-shadow:2px 2px 0 #444
+}
+
+.silver {
+    color: silver;
+}
+
+.gold {
+    color:gold;
+}
+
+.quest {
+    background-image: url(../parchmentbg.png);
+    height: 100px;
+    cursor: pointer;
+}
+
+.questhead {
+    background-image: url(../metalbg.png);
+}
+
+.quest-name {
+    font-size: 18px;
+}

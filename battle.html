@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle!</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/battle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="info.png" id="info">
+    <div id="popup">
+        <div class="w3-margin w3-center">
+            <img id="logo" src="banners/instructions.png">
+        </div>
+        <div id="instructions" class="w3-text-white">
+            <p>1) Defeat all the slimes to successfully complete the quest.</p>
+            <p>2) Attack by pressing the button with the correct answer.</p>
+            <p>3) If the answer is incorrect, the attack will miss.</p>
+            <p>4) After each attack, you will lose a turn</p>
+            <p>5) Once you defeat all the slimes, a boss will appear.</p>
+            <p>6) The quest will end when you run out of turns or defeat the boss.</p>
+            <button id="home"
+            class="home w3-round-xxlarge w3-button w3-blue w3-hover-teal">Back</button>
+        </div>
+    </div>
+
+    <div id="quest-header" class="w3-center w3-text-amber">Defeat the slimes!</div>
+    <div id="turns" class="w3-row w3-container w3-center w3-text-light-gray">Turns left to complete quest: ???</div>
+    <div id="monster" class="w3-center"><img id="monsterimg" src="enemy\slime.png" alt=""></div>
+  
+    <div id="enemyhp">
+        <div id="enemycount" class="cursive w3-text-light-gray">enemies left: ???</div>
+        <div id="bar" class="w3-round-xlarge w3-border">
+            <div id="remaininghp" class="w3-round-xlarge w3-red"></div>
+        </div>
+    </div>
+    <div id="qn" class="w3-center">Loading... Prepare yourself!!</div>
+    <div class="container option-div">
+            <!-- <div class="child"> -->
+                <button id="option1"
+                class="ans wrong w3-round-xxlarge big-btn w3-button cursive w3-padding w3-blue w3-hover-teal">---</button>
+            <!-- </div> -->
+            <!-- <div class="child"> -->
+                <button id="option2"
+                class="ans wrong w3-round-xxlarge big-btn w3-button cursive w3-padding w3-blue w3-hover-teal">---</button>
+            <!-- </div> -->
+            <!-- <div class="child"> -->
+                <button id="option3"
+                class="ans wrong w3-round-xxlarge big-btn w3-button cursive w3-padding w3-blue w3-hover-teal">---</button>
+            <!-- </div> -->
+    </div>
+    <div id="result" class=""></div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="firebaseinfo.js"></script>
+    <script src="scripts/battle.js"></script>
+</body>
+</html>

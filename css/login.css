@@ -1,0 +1,10 @@
+#login-image {
+    width: 66%;
+
+}
+
+body {
+    background-image: url(../bg/loginbg.jpg);
+    background-size: cover;
+    min-height: 100%;
+}

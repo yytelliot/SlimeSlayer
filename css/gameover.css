@@ -1,0 +1,38 @@
+body {
+    background-image: url(../bg/cavebg.jpg);
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Almendra', serif;
+}
+
+.home {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    font-size: xx-large;
+    border: 7px solid midnightblue;
+}
+
+#tablediv {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+}
+
+#scoretable {
+    font-size: xx-large;
+}
+
+#playerscore {
+    font-size: 48px;
+}
+
+#bosskilled {
+    text-shadow:2px 2px 0 #444;
+}
+
+/* #table-place {
+    width: 75px
+} */

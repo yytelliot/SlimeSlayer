@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/teacher.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div id="session-expire" class="w3-container">
+        <h1>Loading...</h1>
+    </div>
+
+    <div id="teacher">
+        <div id="welcome" class="w3-container w3-blue-grey">
+
+        </div>
+        <div class="w3-container">
+            <h3><b id="active-quests">Active quizzes: refreshing...</b></h3>
+            <select id="quiz-select">
+                <optgroup label="Quiz selection">
+                    <option value="null">Select a quiz</option>
+                    
+                </optgroup>
+            </select>
+            <button id="quest-delete" class="w3-btn w3-red w3-round-xxlarge">Delete</button>
+        </div>
+        
+
+        <div id="tablediv" class="w3-middle">
+            <h4 id="quiz-type">Quiz Type:</h3>
+            <table id="scoretable" class="w3-table w3-bordered w3-centered">
+                <tr class="w3-blue-grey">
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Score (Max: 0)</th>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+        <button id="open-makequiz" class="open-makequiz w3-btn w3-blue-grey">New Quiz</button>
+        <button id="open-makeacc" class="open-makeacc w3-btn w3-blue-grey">New Student</button>
+        
+        <div class="popup" id="makeacc">
+            <form autocomplete="off" class="makeacc-container" onsubmit="return false">
+
+                <label class="w3-margin"><b>Student ID</b></label>
+                <input id="student-id" class="w3-margin" type="text" placeholder="Enter UserID" maxlength="9" required>
+            
+                <label class="w3-margin"><b>Student Name</b></label>
+                <input id="student-name" class="w3-margin" type="text" placeholder="Enter Username" maxlength="30" required>
+
+                <label class="w3-margin"><b>Password</b></label>
+                <input id="student-password" class="w3-margin" type="text" placeholder="Enter Password" maxlength="30" required>
+            
+
+                <div class="w3-margin">
+                    <button type="submit" id="submit-makeacc" class="w3-btn w3-green">Register</button>
+                    <button type="button" id="close-makeacc" class="w3-btn w3-grey w3-text-white cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="popup" id="makequiz">
+            <form autocomplete="off" onsubmit="return false">
+                <label class="w3-margin"><b>Quiz Name</b></label>
+                <input id="quiz-name" class="makequiz w3-margin" placeholder="Enter Quiz Name" maxlength="30" required>
+
+                <br>
+
+                <label class="w3-margin"><b>Quiz Type</b></label>
+                <select class="makequiz w3-margin" id="quiz-subject">
+                    <optgroup label="Select a subject">
+                        <option value="Mix">Any subject</option>
+                        <option value="Addition">Addition</option>
+                        <option value="Subtraction">Subtraction</option>
+                        <option value="Multiplication">Multiplication</option>
+                        <option value="Division">Division</option>
+                    </optgroup>
+                </select>
+
+                <br>
+            
+                <label class="w3-margin"><b>Number of Questions</b></label>
+                <input id="quiz-qty" class="makequiz w3-margin" placeholder="Max. 100 Questions" type="number" min="1" max="100" required>
+            
+                <div class="w3-margin">
+                    <button type="submit" id="submit-makequiz" class="w3-btn w3-green">Create Quiz</button>
+                    <button type="button" id="close-makequiz" class="w3-btn w3-grey w3-text-white  cancel">Cancel</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="firebaseinfo.js"></script>
+    <script src="scripts/teacher.js"></script>
+</body>
+</html>

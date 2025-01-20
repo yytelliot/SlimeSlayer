@@ -1,0 +1,45 @@
+body {
+    background-image: url(../bg/splashbg.jpg);
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Almendra', serif;
+}
+
+.home {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    font-size: xx-large;
+    border: 7px solid midnightblue;
+}
+
+.leaderboard {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#quiz-select {
+    font-size: 20px;
+    height: 30px;
+    width: 500px;
+}
+
+#tablediv {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#scoretable {
+    font-size: xx-large;
+}
+
+  
+#bosskilled {
+    text-shadow:2px 2px 0 #444;
+}
+
+/* #table-place {
+    width: 75px
+} */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over!</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/gameover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="w3-center">
+        <img id="logo" src="banners/questSuccess.png">
+        <div id="playerscore" class="w3-text-white">Your score: ???</div>
+    </div>
+    
+    <div id="tablediv" class="w3-center">
+        <table id="scoretable" class="w3-blue-grey w3-table w3-bordered w3-centered">
+            <tr id="scoreheader" class="w3-teal">
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            <!-- <tr>
+                <td>???</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>???</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>???</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>???</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>???</td>
+                <td>0</td>
+            </tr> -->
+        </table>
+    </div>
+    <button id="home" onclick="window.location.href='splash.html'" class="home w3-round-xxlarge w3-button w3-blue w3-hover-teal">Return Home</button>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="firebaseinfo.js"></script>
+    <script src="scripts/gameover.js"></script>
+</body>
+</html>

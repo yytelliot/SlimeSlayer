@@ -1,0 +1,50 @@
+#sesssion-expire {
+    display: block;
+}
+
+#teacher {
+    display: none;
+}
+
+#quiz-select {
+    font-size: medium;
+    height: 30px;
+    margin-right: 10px;
+    width: 500px;
+}
+
+.makequiz {
+    width: 200px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+.open-makequiz {
+    position: fixed;
+    bottom: 75px;
+    right: 28px;
+    width: 280px;
+}
+
+.open-makeacc {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+#tablediv {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}

@@ -1,0 +1,108 @@
+body {
+    background-image: url(../bg/cavebg.jpg);
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Almendra', serif;
+}
+
+.big-btn {
+    width: 320px;
+    height: 150px;
+    border: 7px solid midnightblue;
+    margin: 20px;
+    font-size: 48px;
+}
+
+.option-div {
+    height: 175px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#quest-header {
+    font-size: 64px;
+    text-shadow:2px 2px 0 #444;
+}
+
+#turns {
+    font-size: 24px;
+}
+
+#enemycount {
+    font-size: 36px;
+    /* text-shadow:2px 2px 0 #444; */
+}
+
+#monsterimg {
+    /* width: 33%; */
+    height: 220px; 
+}
+
+#enemyhp {
+    margin: auto;
+    width: 750px;
+}
+
+#bar {
+    margin-bottom: 20px;
+}
+
+#remaininghp {
+    height: 25px;
+    width: 100%;
+}
+
+#qn {
+    /* margin: auto; */
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 36px;
+    background-image: url(../parchmentbg.png);
+    border-style: dashed;
+}
+
+#result {
+    text-align: center;
+    font-size: 64px;
+    /* text-shadow:2px 2px 0 #444; */
+}
+
+#info {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+
+    background-image: url(../bg/cavebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#home {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    font-size: xx-large;
+    border: 7px solid midnightblue;
+}
+
+#instructions {
+    margin-left: 250px;
+    margin-right: 200px;
+}

@@ -1,0 +1,55 @@
+body {
+    background-image: url(../bg/splashbg.jpg);
+    background-size: cover;
+    min-height: 100%;
+}
+
+
+.cursive {
+    font-family: 'Almendra', serif;
+    font-size: 40px;
+}
+
+.btn-div{
+    height: 300px;
+}
+
+.big-btn {
+    width: 320px;
+    height: 150px;
+    border: 7px solid midnightblue;
+}
+
+#main {
+    display: none;
+}
+
+#logo {
+    margin-top: 120px;
+}
+
+#questText {
+    font-family: 'Almendra', serif;
+    color: silver;
+    text-shadow:2px 2px 0 #444
+}
+
+#studentName {
+    color: gold;
+}
+
+#questNum {
+    font-family: 'Almendra', serif;
+    color: gold;
+    text-shadow:2px 2px 0 #444;
+}
+
+#leaderboard-btn {
+    right: 350px;
+    top: 150px;
+}
+
+#quest-btn {
+    left: 350px;
+    top: 150px;
+}
